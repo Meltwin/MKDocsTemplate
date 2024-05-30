@@ -34,8 +34,6 @@ theme:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-  - markdown_include.include:
-      base_path: docs
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list
