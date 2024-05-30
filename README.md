@@ -29,3 +29,13 @@ mkdocs serve
 ```
 
 And open the link shown in the console, which is a localhost address [127.0.0.1:8000](127.0.0.1:8000).
+
+## Modifying and pushing the changes on Github
+
+While on your pc you can use the command `mkdocs serve` to see the changes in real-time, to made them available only you have to push them. 
+
+Thanks to an automated GitHub workflow (that you can found in the *.github/workflows* directory), the website is automatically built when a change is pushed on the `main` branch. It will export the made static website on the `gh-pages` branch.
+
+When creating a new repository you may have to configure it so that it is a GitHub Page (Settings > Pages, then for the source select `deploy from branch`, and for the branch select `gh-pages` and `/(root)` as folder).
+
+You may also need to allow the export of the static website by the workflow: Settings > Actions > General > Workflow permissions and select `Read and write permissions`.
